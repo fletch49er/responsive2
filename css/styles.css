@@ -1,0 +1,425 @@
+/* color pallett
+#e9e6e7 - light grey
+#303339 - dark grey
+*/
+
+/* <div> overflow fix */
+.clearfix::after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* General page styling *********************/
+* {
+	font-family: arial, helvetica, sans-serif;
+	/*border: 1px solid blue;*/
+}
+body {
+	margin: 0;
+	background-color: #e9e6e7; /* light grey */
+}
+#wrapper {
+	background-color: #e9e6e7; /* light grey */
+  max-width: 960px;
+  margin: 0 auto;
+}
+#hdrNavbar, #ftrNavbar, #ltScroll, #rtScroll, #carCount {
+	font-size: 11px;
+}
+#hdrLogo, #hdrNavbar, #gallery, #contact, 
+#menu, #bookHere, .redButton, #sub1-1, #sub1-2, #ltScroll, 
+#rtScroll, #carCount  {
+	display: inline-block;
+}
+#main, #carNav, #sub-main, #sub1-1, #sub1-2 {
+	position: relative;
+}
+
+#header, #cText, #sub1-1Text, #sub1-2Text  {
+	position: absolute;
+	z-index: 2;
+}
+
+/* header syling **************************/
+#header {
+	top: 0;
+  left: 0;
+	width: 100%;
+  padding: 5px 0;
+}
+#hdrLogo > img {
+  height: 40px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+#hdrLogo > img, #gallery, #contact,
+#menu, .redButton {
+	vertical-align: middle;
+}
+#hdrNavbar {
+	margin-left: 28px;
+}
+#hdrNavbar2 {
+  float: right;
+}
+#hdrNavbar > a:link, #hdrNavbar > a:visited,
+#gallery > a:link, #gallery > a:visited,
+#contact > a:link, #contact > a:visited,
+#menu > a:link, #menu > a:visited,
+#blank_link > a:link, #blank_link > a:visited {
+	text-decoration: none;
+	color: #e9e6e7; /* light grey */
+}
+#hdrNavbar > a:hover {
+	color: #303339; /* dark grey */
+}
+#gallery, #contact, #bookHere {
+	margin-left: 14px;
+}
+#gallery img, #contact img, #menu img {
+	display: block;
+	height: 20px;
+  margin: 0 auto 10px auto;
+}
+#gallery, #contact, #menu {
+	width: 40px;
+  height: 40px;
+	font-size: 8.5px;
+}
+#gallery:hover, #contact:hover, #menu:hover, .redButton:hover,
+#ltScroll:hover, #rtScroll:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+#menu, #popup, a.popList  {
+  display: none;
+}
+
+#bookHere {
+	margin-right: 40px;
+}
+.redButton {
+	background-color: darkred;
+	padding: 13px 0 15px 0;
+  width: 100px;
+  height: 12px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff; /* white */
+  cursor: pointer;
+}
+
+/* main content syling *********************/
+#main {
+	background-image:url('../images/hilton1.jpg'); /* chrome */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 550px;
+}
+#cText {
+	top: 350px;
+	left: 80px;
+  width: 310px;
+  height: 300px;
+	color: #e9e6e7; /* light grey */
+}
+#cText > h1 {
+	font-size: 12px;
+}
+#cText > p {
+  font-size: 24px;
+  font-weight: bold;
+}
+#carNav {
+	margin: 480px 40px 10px 10px;
+  float: right; 
+}
+#ltScroll, #rtroll {
+	cursor: pointer;
+}
+#ltScroll, #rtScroll, #carCount {
+	display: inline-block;
+  margin: 1px;
+  padding: 10px;
+  border: 1px solid #e9e6e7; /* light grey */
+  background-color: #303339; /* dark grey */
+  color: #e9e6e7; /* light grey */
+}
+#bookHere2 {
+   display: none;
+}
+
+/* sub-main syling **********************/
+#sub-main {
+  margin: 15px 0 0 0;
+  width: 100%;
+}
+#sub1-1, #sub1-2 {
+  height: 300px;
+}
+#sub1-1 {
+	background-image: url('../images/hilton6.jpg');
+  background-repeat: no-repeat;
+  background-size: 645px;
+  width: 645px;
+  color: #303339; /* dark grey */   
+}
+#sub1-1Text {
+	top: 100px;
+  left: 40px;
+	background-color: #e9e6e7; /* light grey */
+  width: 220px;
+  height: 140px;
+  padding: 10px;
+  font-size: 9px;
+  line-height: 18px;
+}
+#sub1-1Text > h1.news {
+	font-size: 16px;
+}
+#sub1-2 {
+	background: url('../images/hilton7.jpg');
+  background-repeat: no-repeat;
+  background-size: auto 300px;
+	margin-left: 10px;
+  width: 300px;
+  color: #e9e6e7; /* light grey */
+}
+#sub1-2Text {
+	top: 220px;
+  left: 20px;
+}
+#sub2-1, #sub2-2, #sub2-1Text, #sub2-2Text {
+	display: none;
+}	
+
+/* footer syling **************************/
+#footer {
+	background-color: white;
+  margin-top: 15px;
+  padding: 20px;
+  max-width: 920px;
+  text-align: center;
+  color: #303339; /* dark grey */
+}
+#ftrLogo > img {
+	width: 120px;
+  cursor: pointer;
+}
+#ftrNavbar {
+ 	margin-top: 20px;
+}
+#ftrNavbar > a:link, #ftrNavbar > a:visited, 
+#popup > a:link, #popup > a:visited {
+	text-decoration: none;
+	color: #303339; /* dark grey */
+}
+#ftrNavbar > a:hover, #popup > a:hover  {
+	color:  #303339; /* dark grey */
+}
+#adchoicesLogo {
+	width: 10px;
+  vertical-align: middle;
+}
+
+/* blank_link syling **************************/
+#blank_link {
+	background-color: #303339; /* dark grey */
+  padding: 40px;
+  text-align: center;
+  color: #e9e6e7; /* light grey */  
+}
+#hilton {
+	width: 300px;
+  margin-bottom: 20px;
+}
+
+/********************************************
+ * responsive style amendments
+ */
+@media only screen and (max-width: 768px) {
+
+	/* header syling **************************/
+    #wrapper {
+    	max-width: 768px;
+    }
+    #hdrLogo > img {
+      height: 40px;
+      margin-left: 20px;
+    }
+    #hdrNavbar {
+    	display: none;
+    }
+    #menu {
+    	display: inline-block;
+      position: relative;
+      text-align: center;
+      border-right: 1px solid #e9e6e7; /* light grey */
+      color: #e9e6e7; /* light grey */
+    	cursor: pointer;
+    }
+    #popup  {
+    	display: none;
+    	background-color: #e9e6e7; /* light grey */
+    	width: 150px;
+    	padding: 0px 5px 0px 5px;
+    	position: absolute;
+    	top: 35px;
+    	left: 310px;
+      font-size: 9px;
+      line-height: 16px;
+      color: #303339; /* dark grey */
+      z-index: 25;
+    }
+    #bookHere {
+    	margin-right: 20px;
+    
+    /* main content syling *********************/
+    #main {
+      background-size: 768px;
+      max-width: 768px;
+      height: 510px;
+    }
+    #carNav {
+    	margin-top: 450px;
+      margin-left: 20px;
+    }
+    
+    /* sub-main syling **********************/
+    #sub-main {
+      max-width: 768px;
+      height: 1270px;
+    }
+    #sub1-1, #sub1-2, #sub1-1Text, #sub1-2Text {
+    	display: none;
+    }
+    #sub2-1, #sub2-2, #sub2-1Text, #sub2-2Text {
+			display: block;
+      max-width: 768px;  
+    }
+    #sub2-1 {
+			height: 395px;  
+    }
+    #sub2-2 {
+			height: 455px;  
+    }
+    #sub2-1Text, #sub2-2Text {
+    	background-color: #e9e6e7; /* light grey */
+      height: 140px;
+      padding: 10px;
+      font-size: 9px;
+      line-height: 18px;
+	}
+    #sub2-1 {
+    	background: url('../images/hilton6.jpg');
+    	background-repeat: no-repeat;
+    	background-size: 768px;
+    }
+    #sub2-2 {
+    	background: url('../images/hilton7.jpg');
+    	background-repeat: no-repeat;
+    	background-size: 768px;
+    }
+	
+	/* footer syling **************************/
+    #footer {
+    	max-width: 728px;
+    }
+    
+    /* blank_link syling **************************/
+    #blank_link {
+    	max-width: 688px  
+    }
+    #hilton {
+    	width: 300px;
+    }
+
+}
+@media only screen and (max-width: 360px) {
+
+	/* header syling **************************/
+    #hdrLogo > img {
+        height: 40px;
+    }
+	#gallery, #contact, #bookHere {
+    	display: none;
+    }
+    #menu {
+     	border-right: none;
+        margin-right: 20px;
+	}
+    #popup {
+    	left: 150px;
+    }
+      
+    /* main content syling *********************/
+    #main {
+       	background-size: 360px;
+        width: 360px;
+        height: 235px;
+    }
+    #cText {
+	top: 75px;
+	left: 20px;
+    display: none;
+    }
+    #carNav {
+    	margin-top: 190px;
+        margin-left: 20px;
+    }
+    #bookHere2 {
+    	display: block;
+        background-color: darkred;
+        width: 360px;
+        padding: 15px 0;
+        color: #e9e6e7; /* light grey */
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    /* sub-main syling **********************/
+    #sub-main {
+        max-width: 360px;
+        height: 800px;
+        margin-top: 0;
+    }
+    #sub2-1, #sub2-2, #sub2-1Text, #sub2-2Text {
+        max-width: 360px;  
+    }
+     #sub2-1 {
+		height: 200px;
+    }
+    #sub2-2 {
+		height: 265px;  
+    }
+    #sub2-1Text, #sub2-2Text {
+    	background-color: #e9e6e7; /* light grey */
+        height: 140px;
+        padding: 5px 10px;
+        font-size: 9px;
+        line-height: 18px;
+	}
+    #sub2-1 {
+    	background-size: 360px;
+    }
+    #sub2-2 {
+    	background-size: 360px;
+    }
+	
+	/* footer syling **************************/
+    #footer {
+    	max-width: 360px;
+    }
+    
+    /* blank_link syling **************************/
+    #blank_link {
+    	max-width: 320px  
+    }
+    #hilton {
+    	width: 300px;
+    }
+
+}
